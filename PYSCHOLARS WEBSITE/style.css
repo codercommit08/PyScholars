@@ -6,15 +6,18 @@ body{
     text-align: center;
     overflow: hidden;
     position: fixed;
-    background-color: transparent;
+    background-color: rgb(55, 127, 241);
     top: 0;
     width: 99.5%;
     padding: 8px;
     color: black;
 
 }
+
+
 button{
     font-family: Verdana;
+    font-weight: bold;  
     font-size: 16px;
     padding: 8px;
     transition: all 0.5s ease 0s;
@@ -24,16 +27,15 @@ button{
     background-color:transparent;
 }
 .navbar button:hover{
-    background-color: rgb(55, 127, 241);
+    color: white;
 }
 
 .mainlogo{
     width: 45%;
-
 }
 
 .homes{
-    background: linear-gradient(rgb(230, 230, 55), rgb(55, 127, 241));
+    background-color: whitesmoke;
     height: 85vh;
     padding: 75px;
 }
@@ -44,18 +46,9 @@ button{
     padding-left:250px;
     padding-right: 250px;
     padding-bottom: 80px;
-    background-color: rgb(183, 183, 29); 
+   
 }
 
-
-.mathtutors{
-    height: 85vh;
-    padding-top: 80px;
-    padding-left:250px;
-    padding-right: 250px;
-    padding-bottom: 80px;
-    background-color: rgb(55, 127, 241);
-}
 
 .signups{
     height: 85vh;
@@ -63,9 +56,16 @@ button{
     padding-left:250px;
     padding-right: 250px;
     padding-bottom: 80px;
-    background-color: rgb(255, 255, 0);
-}
 
+}
+.teams{
+    height: 85vh;
+    padding-top: 150px;
+    padding-left:250px;
+    padding-right: 250px;
+    padding-bottom: 80px;
+
+}
 
 
 
