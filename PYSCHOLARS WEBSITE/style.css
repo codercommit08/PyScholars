@@ -68,13 +68,14 @@ button{
 
 .aboutUs{
     height: 85vh;
-    padding-top: 80px;
-    padding-left:250px;
-    padding-right: 250px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-left:200px;
+    padding-right: 200px;
+    padding-bottom: 60px;
     background-color: #F5F5F5;
     
 }
+
 
 .theTeam {
     background-color: white;
