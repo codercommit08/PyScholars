@@ -1,3 +1,106 @@
+
+#flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex-basis: 30%;
+  text-align: center;
+}
+
+.card h2 {
+  color: rgb(55, 127, 241);
+  margin-bottom: 15px;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.join-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Adjust the width as needed */
+  height: 450px;
+  padding: 25px;
+  text-align: center;
+}
+
+.card-title {
+  color: #5f3dc4;
+  font-size: 2.5rem;
+  margin-top: 1px;
+  text-decoration: underline;
+}
+
+.card-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.card-list li {
+  background: url('checkmark.png') no-repeat left center; /* Replace with the path to your check icon image */
+  padding-right: 150px;
+  background-size: 20px; /* Adjust based on the size of your check icon */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 200;
+
+}
+
+.card-button {
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 25px 24px; /* Adjust as necessary for your design */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%; /* Makes the button as wide as the card */
+  display: block; /* Makes the button a block-level element */
+  text-align: center; /* Centers text horizontally */
+  line-height: 1.5px; /* Adjust this value to center the text vertically */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  margin-top: 120px; /* Optional: adds space between the list and the button */
+}
+
+.card-button:hover {
+  background-color: #3700b3;
+}
+
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+
 body {
     margin: 0;
 }
@@ -8,6 +111,7 @@ html {
 
 .mainBody {
     width: 100%;
+    font-family: "Lexend", sans-serif;
 }
 .navbar{
     font-size: 22px;
@@ -17,13 +121,14 @@ html {
     background-color:rgb(55, 127, 241);
     top: 0;
     width: 99.5%;
-    padding: 7px;
+    padding: 12px;
     color: black;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-
-
+    
 }
+
+
 
 
 button{
@@ -32,14 +137,16 @@ button{
     border: 0;
     cursor: pointer;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 15px;
     height: 30px;
     padding: 0px 15px;
-    text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px;
+    /* text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px; */
     background-color:rgb(55, 127, 241);
     transition: all 0.5s ease 0s;
+    font-family: "Lexend", sans-serif;
+
 
     
 }
@@ -58,6 +165,7 @@ button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    
   }
 
 .homes{
@@ -68,30 +176,45 @@ button{
 
 .aboutUs{
     height: 85vh;
-    padding-top: 60px;
+    padding-top: 10px;
     padding-left:200px;
     padding-right: 200px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
     background-color: #F5F5F5;
     
 }
 
 
 .theTeam {
-    background-color: white;
+    background-color: rgb(236, 244, 246);
 
 }
 
 .aboutTitle {
     width: 100%;
-    padding-bottom: 10px;
-    text-align: left;
+    padding-bottom: 0px;
+    text-align: center;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    font-size: 5vmin;
-    color:rgb(255, 241, 43);
+    font-size: 6vmin;
+    /* color:rgb(27, 81, 163); */
+    color: rgb(55, 127, 241);
+    text-shadow: rgb(0 0 0 / 25%) 3px 3px 3px;
+}
+
+.joinTitle {
+  width: 100%;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6vmin;
+  /* color:rgb(27, 81, 163); */
+  color: rgb(55, 127, 241);
+  text-shadow: rgb(0 0 0 / 25%) 4px 3px 3px;
 }
 
 .aboutContext {
@@ -117,14 +240,20 @@ button{
 }
 .teams{
     height: 70vh;
-    padding-top: 150px;
+    padding-top: 10px;
     padding-left:250px;
     padding-right: 250px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
 
 }
 
-
+.joinUs {
+  height: 60vh;
+  padding-top: 10px;
+  padding-left: 250px;
+  padding-right: 250px;
+  padding-bottom: 380px;
+}
 
 
 
@@ -134,76 +263,7 @@ button{
     font-size: 20px;
 }
 
-/* .card {
-    position: relative;
-    width: 190px;
-    height: 254px;
-    color: #fff;
-    transition: 0.5s;
-    cursor: pointer;
-    
-  }
-  
-  .card:hover {
-    transform: translateY(-20px);
-  }
-  
-  .card::before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(45deg, #d8f44c, #5a95c9);
-    border-radius: 1.2em;
-  }
-  
-  .card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, #d8f44c, #5a95c9);
-    filter: blur(30px);
-  }
-  
-  .card span {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    right: 6px;
-    bottom: 6px;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    border-radius: 1em;
-  }
-  
-  .card span::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-  }
-  
-  .card .content {
-    position: relative;
-    padding: 10px;
-    z-index: 10;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    font-size: 1.5em;
-  } */
-/* FOOTER CSS */
+
  
  .footer {
   position: relative;
@@ -302,6 +362,33 @@ button{
   bottom: 20px;
   animation: animate 3s linear infinite;
 }
+
+
+@keyframes switch {
+    0% {
+        opacity: 100%;
+    }
+    87% {
+        opacity: 100%;
+    }
+    88% {
+        opacity: 0%;
+    }
+
+}
+@keyframes desaturate {
+    0% {
+        filter: grayscale(1); /* Start with no desaturation */
+    }
+    100% {
+        filter: grayscale(0); /* End with full desaturation */
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 @keyframes animateWaves {
   0% {

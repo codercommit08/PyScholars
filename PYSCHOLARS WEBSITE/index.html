@@ -6,27 +6,37 @@
         <link href="style.css" type="text/css" rel="stylesheet">
     </head>
     <body class="mainBody">
+        <div id="home" class="homes">
+            <img class="center" src="logotrust.gif" id="gifImage" alt="Logo GIF">
+            <img class="center" src="pylogo.png" id="pngImage" alt="Logo PNG" style="display: none;">
+            <p>learn more here!</p>
+        </div>        
         <div class="navbar">
            
-            <a href="#home"><button>Home</button></a>
-            <a href="#about"><button>About Us</button></a>
-            <a href="#the team"><button>The Team</button></a>
-            <a href="#join us" class="right"><button>Join Us</button></a>
-        </div>
-        <div id="home" class="homes">
-            <img class="center" src="pylogo.png">
+            <a href="#home" class="navtext"><button>Home</button></a>
+            <a href="#about" class="navtext"><button>About Us</button></a>
+            <a href="#the team" class="navtext"><button>The Team</button></a>
+            <a href="#join us" class="navtext"><button>Join Us</button></a>
         </div>
 
         <section id="about" class="aboutUs">
             <h1 class="aboutTitle">About <u>Us</u></h1>
             <div class="about" id="flex">
-              
+                <div class="card">
+                    <h2>Math Tutoring</h2>
+                    <p>Our personalized math tutoring sessions empower students by clarifying complex concepts and fostering a love for numbers. We tailor each session to the student's unique learning style, ensuring they build confidence and improve academically.</p>
+                </div>
+                <div class="card">
+                    <h2>Our Mission</h2>
+                    <p>PyScholars is dedicated to making high-quality education accessible to all. Through our charity-driven classes and tutoring, we aim to support local communities and inspire a love for learning. Every course you take helps someone in need.</p>
+                </div>
+                <div class="card">
+                    <h2>Python Classes</h2>
+                    <p>Our Python classes are designed to introduce coding in an engaging and accessible manner. From the basics to advanced topics, our expert instructors guide you through each step, preparing you for a future in technology.</p>
+                </div>
             </div>
+            
         </section>
-       
-
-
-        
         <section id="team" class="theTeam">
             <div id="the team" class="teams">
                 <h1 class="title">The Team</h1>
@@ -35,14 +45,33 @@
        
        
         <section id="join" class="joinUs">
-        <div id ="join us" class="signups">
-            <h1 class="title">Join Us</h1>
-            <!-- <div class="card">
-                <span></span>
-                         <div class="content">Sign up!</div>
-                     </div> -->
-        </div>
+            <h1 class="joinTitle">Join Us</h1>
+            <div class="cards-container">
+                <div class="join-card">
+                    <h2 class="card-title">Student</h2>
+                    <ul class="card-list">
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                    </ul>
+                    <button class="card-button">Join as Student</button>
+                </div>
+                <div class="join-card">
+                    <h2 class="card-title">Tutor</h2>
+                    <ul class="card-list">
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                        <li>Blank text</li>
+                    </ul>
+                    <button class="card-button">Join as Tutor</button>
+                </div>
+            </div>
         </section>
+        
 
         <footer class="footer">
             <div class="waves">
@@ -56,10 +85,10 @@
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a></li>
               <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <ion-icon name="logo-youtube"></ion-icon>
                 </a></li>
               <li class="social-icon__item"><a class="social-icon__link" href="#">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <ion-icon name="logo-github"></ion-icon>
                 </a></li>
               <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/pyscholars7/">
                   <ion-icon name="logo-instagram"></ion-icon>
@@ -68,6 +97,15 @@
           </footer>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
           <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                setTimeout(function() {
+                    document.getElementById('gifImage').style.display = 'none';
+                    document.getElementById('pngImage').style.display = 'block';
+                }, 3900); // 3.9 seconds
+            });
+            </script>
+                
+            
     </body>
 </html>
