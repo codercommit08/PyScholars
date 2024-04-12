@@ -62,7 +62,7 @@
   padding-right: 100px;
   background-size: 20px; /* Adjust based on the size of your check icon */
   margin-bottom: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   font-weight: 150;
 
@@ -82,7 +82,7 @@
   text-align: center; /* Centers text horizontally */
   line-height: 1.5px; /* Adjust this value to center the text vertically */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  margin-top: 70px; /* Optional: adds space between the list and the button */
+  margin-top: 10px; /* Optional: adds space between the list and the button */
 }
 
 
@@ -182,7 +182,7 @@ button{
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     background-color: white;
    
 }
@@ -252,7 +252,7 @@ button{
 
 .joinUs {
   height: 55vh;
-  padding-top: 35px;
+  padding-top: 5px;
   padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 380px;
@@ -367,6 +367,14 @@ button{
   opacity: 0.7;
   bottom: 20px;
   animation: animate 3s linear infinite;
+}
+
+.pricething {
+  font-size: 40px;
+}
+
+.soon {
+  font-size: 20px;
 }
 
 
