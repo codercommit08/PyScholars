@@ -1,9 +1,8 @@
-@media (min-width:750px) {
 
 #flex {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .card {
@@ -12,7 +11,7 @@
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
-  flex-basis: 30%;
+  flex-basis: 40%;
   text-align: center;
 }
 
@@ -22,7 +21,7 @@
 }
 
 .card p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.6;
   color: #333;
 }
@@ -30,7 +29,8 @@
 .cards-container {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-basis: 40%;
+  gap: 50px;
   padding: 50px;
 }
 
@@ -45,48 +45,50 @@
 }
 
 .card-title {
-  color: #5f3dc4;
+  color: rgb(55, 127, 241);
   font-size: 2.5rem;
   margin-top: 1px;
-  text-decoration: underline;
 }
 
 .card-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .card-list li {
   background: url('checkmark.png') no-repeat left center; /* Replace with the path to your check icon image */
-  padding-right: 200px;
+  padding-left: 50px;
+  padding-right: 100px;
   background-size: 20px; /* Adjust based on the size of your check icon */
   margin-bottom: 10px;
   text-align: center;
-  font-size: 25px;
-  font-weight: 200;
+  font-size: 20px;
+  font-weight: 150;
 
 }
 
 .card-button {
-  background-color: #6200ea;
+  background-color: #f5da0c;
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 25px 24px; /* Adjust as necessary for your design */
+  border-radius: 10px;
+  padding: 30px 25px; /* Adjust as necessary for your design */
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 2rem;
   transition: background-color 0.3s;
   width: 100%; /* Makes the button as wide as the card */
   display: block; /* Makes the button a block-level element */
   text-align: center; /* Centers text horizontally */
   line-height: 1.5px; /* Adjust this value to center the text vertically */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  margin-top: 120px; /* Optional: adds space between the list and the button */
+  margin-top: 70px; /* Optional: adds space between the list and the button */
 }
 
+
+
 .card-button:hover {
-  background-color: #3700b3;
+  background-color: #aa9000;
 }
 
 
@@ -123,9 +125,9 @@ html {
     top: 0;
     width: 99.5%;
     padding: 12px;
-    color: black;
+    /* color: black;
     box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2); */
     
 }
 
@@ -142,10 +144,10 @@ button{
     border-radius: 4px;
     font-size: 15px;
     height: 30px;
-    padding: 0px 15px;
+    padding: 5px 25px;
     /* text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px; */
     background-color:rgb(55, 127, 241);
-    transition: all 0.5s ease 0s;
+    transition: all 0.7s ease 0s;
     font-family: "Lexend", sans-serif;
 
 
@@ -153,7 +155,7 @@ button{
 }
 .navbar button:hover{
     box-shadow: rgb(216, 233, 65) 0px 1px 40px;
-    transition: all 0.1s ease 0s;
+    transition: all 0.4s ease 0s;
 }
 
 .mainlogo{
@@ -166,71 +168,30 @@ button{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    size: 4px;
     
   }
 
 .homes{
-    background: linear-gradient(rgb(142, 179, 239), rgb(37, 125, 208));
-    height: vh;
+    background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255));
+    height: 72vh;
     padding: 75px;
 }
 
 .aboutUs{
-    height: 85vh;
-    padding-top: 10px;
+    height: 70vh;
+    padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
     padding-bottom: 100px;
-    background-color: #F5F5F5;
-    
+    background-color: white;
+   
 }
 
-
+/* 
 .theTeam {
-  background-color: #f5f5f5; /* Your website's background color for sections */
-  text-align: center;
-  padding: 10px 0;
-}
+    background-color: rgb(255, 255, 255);
 
-
-.teamSubtitle {
-  color: #5f5f5f; /* Your website's subtitle color */
-  margin-top: 30px;
-  font-size: 1.5rem;
-}
-
-.teamMembers {
-  display: flex;
-  justify-content: center;
-  gap: 50px; /* Space between team member cards */
-}
-
-.teamMember {
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for card effect */
-  width: 300px; /* Fixed width for each member card */
-}
-
-.teamPhoto {
-  width: 100%; /* Make the image fit the card width */
-  height: auto; /* Keep the aspect ratio of the image */
-  border-radius: 10px; /* Optional: rounds the corners of the image */
-  margin-bottom: 15px;
-}
-
-.teamMember h3 {
-  color: #374355; /* Your website's title color */
-  margin-bottom: 5px;
-}
-
-.teamRole {
-  color: #5f5f5f; /* Your website's text color */
-  font-style: italic;
-}
-
+} */
 
 .aboutTitle {
     width: 100%;
@@ -247,19 +208,6 @@ button{
 }
 
 .joinTitle {
-  width: 100%;
-  text-align: center;
-  font-family: "Lexend", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 6vmin;
-  /* color:rgb(27, 81, 163); */
-  color: rgb(55, 127, 241);
-  text-shadow: rgb(0 0 0 / 25%) 4px 3px 3px;
-}
-
-.teamTitle {
   width: 100%;
   text-align: center;
   font-family: "Lexend", sans-serif;
@@ -303,11 +251,12 @@ button{
 }
 
 .joinUs {
-  height: 60vh;
-  padding-top: 10px;
+  height: 55vh;
+  padding-top: 35px;
   padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 380px;
+  background-color: white;
 }
 
 
@@ -324,7 +273,7 @@ button{
   position: relative;
   width: 93%;
   background: #3586ff;
-  min-height: 100px;
+  min-height: 105px;
   padding: 20px 50px;
   display: flex;
   justify-content: center;
@@ -374,10 +323,12 @@ button{
 }
 
 .footer p {
+  text-align: left;
   color: #fff;
-  margin: 15px 0 10px 0;
+  margin: 0;
   font-size: 1rem;
   font-weight: 300;
+  padding: 0;
 }
 
 .wave {
@@ -462,5 +413,3 @@ button{
     background-positon-x: 0px;
   }
 }  
-
-}
