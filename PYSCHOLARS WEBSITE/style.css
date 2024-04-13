@@ -7,7 +7,7 @@
 
 .card {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.242);
   border-radius: 10px;
   padding: 20px;
   margin: 10px;
@@ -18,12 +18,14 @@
 .card h2 {
   color: rgb(55, 127, 241);
   margin-bottom: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card p {
   font-size: 18px;
   line-height: 1.6;
   color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .cards-container {
@@ -48,6 +50,7 @@
   color: rgb(55, 127, 241);
   font-size: 2.5rem;
   margin-top: 1px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .card-list {
@@ -64,6 +67,7 @@
   margin-bottom: 10px;
   text-align: left;
   font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 150;
 
 }
@@ -83,12 +87,14 @@
   line-height: 1.5px; /* Adjust this value to center the text vertically */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin-top: 10px; /* Optional: adds space between the list and the button */
+
 }
 
 
 
 .card-button:hover {
-  background-color: #aa9000;
+  background-color: #bda623;
+  transform: translateY(-3px);
 }
 
 
@@ -156,6 +162,7 @@ button{
 .navbar button:hover{
     box-shadow: rgb(216, 233, 65) 0px 1px 40px;
     transition: all 0.4s ease 0s;
+    transform: translateY(-5px);
 }
 
 .mainlogo{
@@ -178,7 +185,7 @@ button{
 }
 
 .aboutUs{
-    height: 84vh;
+    height: 110vh;
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
@@ -206,6 +213,18 @@ button{
     color: rgb(55, 127, 241);
     text-shadow: rgb(0 0 0 / 25%) 3px 3px 3px;
 }
+.team{
+    width: 100%;
+    padding-bottom: 0px;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vmin;
+    /* color:rgb(27, 81, 163); */
+    color: rgb(55, 127, 241);
+    text-shadow: rgb(0 0 0 / 25%) 3px 3px 3px
+}
 
 .joinTitle {
   width: 100%;
@@ -223,11 +242,10 @@ button{
 .aboutContext {
     width: 100%;
     text-align: left;
-    font-family:"Lexend", sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
-    font-style: normal;
-    font-size: 2.5vmin;
+    font-size: 3vmin;
     color:black;
 
 }
@@ -250,15 +268,6 @@ button{
   padding-bottom: 380px;
   background-color: white;
 }
-
-
-
-
-.paragraphs{
-    font-family: verdana;
-    font-size: 20px;
-}
-
 
  
  .footer {
@@ -321,6 +330,7 @@ button{
   font-size: 1rem;
   font-weight: 300;
   padding: 0;
+  font-family: "Lexend", sans-serif;
 }
 
 .wave {
@@ -363,11 +373,61 @@ button{
 
 .pricething {
   font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .soon {
-  font-size: 20px;
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.weprovide{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#team-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-card {
+  width: 240px; /* Adjust width as needed */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.team-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.team-card h3 {
+  font-size: 1.2rem;
+  color: #333333;
+  margin-top: 16px;
+}
+
+.team-card p {
+  font-size: 1rem;
+  color: #777777;
+  margin-bottom: 16px;
+}
+
+
+
+
 
 
 @keyframes switch {
