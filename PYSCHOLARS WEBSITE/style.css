@@ -31,7 +31,7 @@
   justify-content: center;
   flex-basis: 40%;
   gap: 50px;
-  padding: 50px;
+  padding: 45px;
 }
 
 .join-card {
@@ -141,7 +141,7 @@ button{
     cursor: pointer;
     color: #fff;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 8px;
     font-size: 15px;
     height: 30px;
     padding: 5px 25px;
@@ -178,7 +178,7 @@ button{
 }
 
 .aboutUs{
-    height: 70vh;
+    height: 84vh;
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
@@ -223,7 +223,7 @@ button{
 .aboutContext {
     width: 100%;
     text-align: left;
-    font-family: sans-serif;
+    font-family:"Lexend", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -232,15 +232,7 @@ button{
 
 }
 
-
-.signups{
-    height: 60vh;
-    padding-top: 80px;
-    padding-left:250px;
-    padding-right: 250px;
-    padding-bottom: 80px;
-
-}
+/* }
 .teams{
     height: 70vh;
     padding-top: 10px;
@@ -248,11 +240,11 @@ button{
     padding-right: 250px;
     padding-bottom: 20px;
 
-}
+} */
 
 .joinUs {
   height: 55vh;
-  padding-top: 5px;
+  padding-top: 35px;
   padding-left: 250px;
   padding-right: 250px;
   padding-bottom: 380px;
