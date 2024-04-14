@@ -1,22 +1,151 @@
-@media (max-width: 800px){
-    #flex {
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap;
-        flex:100%;
-     
-      }
-    .center {
-        width: fit-content;
+@media only screen and (max-width: 480px) and (max-width: 1000px){
+  .mainBody{
+    margin: auto;
+    width: 150%;
+  }
+  .homes{
+    flex-direction: column;
+    height: 150vh;
 
-      }
-  
-    .card{
+  }
+
+
+  .about, .card{
+    flex-direction: column;
+    flex-basis: auto;
+    width: 60%;
+    margin: auto;
+
+  }
+
+  .center{
+    width: 95%;
+    margin: auto;
+  }
+
+
+}
+/* For tablets */
+@media (max-width: 1000px) {
+    .about, .cards-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex-basis: auto; /* Reset flex-basis */
+        width: 85%; /* Adjust width for tablets */
+        margin: 10px auto; /* Center align the cards with margin */
+    }
+
+    .aboutUs {
+        padding-left:5%;
+        padding-right: 5%;
+        height: auto;
+    }
+
+    .joinUs {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 170%; /*Adjust padding-bottom for content */
+        height: auto;
+    }
+
+    .team{
+      text-align: center;
+    }
+
+    .team-container, .team-card{
+      width: 40%;
+      flex-direction: row-reverse;
+      margin: 10px auto;
+      
+    }
+
+
+    .navbar {
+        width: 100%; /* Fix navbar width */
+    }
+
+    .center {
+        width: 80%; /* Adjust logo image size */
+    }
+
+    .footer {
+        width: 92%; /* Adjust footer width */
+        padding: 20px;
+    }
+
+    .join-card{
+      width: 100%;
+      font-size: 20%;
+    }
+
+    .pricething, .soon, .weprovide {
+        font-size: 30px; /* Adjust font size for readability on tablets */
+    }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+    .navbar {
+        font-size: 18px; /* Smaller font size for navbar links */
+    }
+
+    .navbar button {
+        padding: 5px 15px; /* Adjust button padding */
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+
+    .homes {
+        height: auto; /* Make height automatic to fit content */
+        padding: 70px 25px; /* Adjust padding for smaller screens */
         
     }
-    
-    
-
+    .aboutUs{
+      height: auto;
     }
+
+    .team{
+      text-align: center;
+    }
+
+    .team-container, .team-card{
+      width: 50%;
+      flex-direction: row-reverse;
+      margin: auto;
+      
+    }
+
+    .joinus{
+      height: auto;
+    }
+
+    .aboutTitle, .joinTitle, .team {
+        font-size: 10vmin; /* Smaller font size for titles */
+    }
+
+    .card-title {
+        font-size: 2rem; /* Smaller font size for card titles */
+    }
+
+    .card-button {
+        padding: 15px 20px; /* Adjust padding for buttons */
+        font-size: 1.5rem; /* Smaller font size for buttons */
+        margin-top: 20px; /* Adjust margin top */
+    }
+
+    .footer {
+        padding: 20px 15px; /* Adjust padding for footer */
+        height: auto;
+    }
+    .footer p{
+      font-size: 10%;
+    }
+
+    .social-icon__link {
+        font-size: 1.5rem; /* Adjust social icon size for mobile */
+    }
+}
+
     
     
