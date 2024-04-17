@@ -1,7 +1,9 @@
 @media only screen and (max-width: 480px) and (max-width: 760px){
   .mainBody{
-    margin: auto;
+    margin: 0;
     width: 150%;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   .homes{
     flex-direction: column;
@@ -13,7 +15,7 @@
   .about, .card{
     flex-direction: column;
     flex-basis: auto;
-    width: 60%;
+    width: 70%;
     margin: auto;
 
   }
@@ -22,6 +24,7 @@
     width: 95%;
     margin: auto;
   }
+
 
 
 }
@@ -54,11 +57,15 @@
       text-align: center;
     }
 
-    .team-container, .team-card{
-      width: 40%;
-      flex-direction: row-reverse;
-      margin: 10px auto;
+    .team-container{
+      width: 30%;
+      /* margin: 10px auto; */
       
+    }
+
+    .team-card {
+      width: 30%;
+      flex-direction: row;
     }
 
 
@@ -86,7 +93,7 @@
 }
 
 /* For mobile phones */
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
     .navbar {
         font-size: 18px; /* Smaller font size for navbar links */
     }
@@ -110,18 +117,25 @@
     }
 
     .team-container, .team-card{
-      width: 50%;
-      flex-direction: row-reverse;
+      width: 60%;
+      flex-direction: row;
       margin: auto;
       
     }
 
     .joinus{
-      height: auto;
+      height: 50vh;
+      margin: 0;
     }
 
     .aboutTitle, .joinTitle, .team {
         font-size: 10vmin; /* Smaller font size for titles */
+    }
+
+    .cards-container{
+      width: 70%;
+      flex-direction: column;
+      padding-right: 30%;
     }
 
     .card-title {
@@ -137,6 +151,7 @@
     .footer {
         padding: 20px 15px; /* Adjust padding for footer */
         height: auto;
+        width: 93%;
     }
     .footer p{
       font-size: 10%;
@@ -144,6 +159,7 @@
 
     .social-icon__link {
         font-size: 1.5rem; /* Adjust social icon size for mobile */
+        padding-right: 5%;
     }
 }
 
