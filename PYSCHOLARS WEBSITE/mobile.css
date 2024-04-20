@@ -1,6 +1,6 @@
-@media only screen and (max-width: 480px) and (max-width: 760px){
+/* @media only screen and (max-width: 480px) and (max-width: 760px){
   .mainBody{
-    margin: 0;
+    margin: auto;
     width: 150%;
     overflow-x: hidden;
     max-width: 100%;
@@ -90,10 +90,10 @@
     .pricething, .soon, .weprovide {
         font-size: 30px; /* Adjust font size for readability on tablets */
     }
-}
+} 
 
 /* For mobile phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .navbar {
         font-size: 18px; /* Smaller font size for navbar links */
     }
@@ -108,6 +108,7 @@
         padding: 70px 25px; /* Adjust padding for smaller screens */
         
     }
+    
     .aboutUs{
       height: auto;
     }
@@ -123,23 +124,48 @@
       
     }
 
-    .joinus{
-      height: 50vh;
-      margin: 0;
+    .join-card{
+      width: 100%;
+      font-size: 20%;
+      margin-left: 20px;
+    }
+
+    .joinUs{
+      height: 200vh;
+      padding-bottom: 0% ;
+    }
+
+    .joinTitle {
+      margin-right: 40px;
     }
 
     .aboutTitle, .joinTitle, .team {
         font-size: 10vmin; /* Smaller font size for titles */
     }
 
+    .team-card{
+      width: 100%;
+    }
+
+
     .cards-container{
-      width: 70%;
+      display: flex;
+      width:60%;
       flex-direction: column;
-      padding-right: 30%;
+      align-items: center;
+      /* padding-right: 30%; */
     }
 
     .card-title {
         font-size: 2rem; /* Smaller font size for card titles */
+    }
+
+    .weprovide{
+      font-size: 5em;
+    }
+
+    .card-list{
+      font-size: 1em;
     }
 
     .card-button {

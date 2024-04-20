@@ -117,11 +117,13 @@ body {
 
 html {
     scroll-behavior: smooth;
+
   }
 
 .mainBody {
     width: 100%;
     font-family: "Lexend", sans-serif;
+   
 }
 .navbar{
     font-size: 22px;
@@ -182,7 +184,7 @@ button{
 }
 
 .aboutUs{
-    height: 113vh;
+    height: 180vh;
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
@@ -258,7 +260,7 @@ button{
 } */
 
 .joinUs {
-  height: 60vh;
+  height: 70vh;
   padding-top: 35px;
   padding-left: 250px;
   padding-right: 250px;
@@ -397,7 +399,7 @@ button{
 }
 
 .team-card {
-  width: 240px; /* Adjust width as needed */
+  width: 35%; /* Adjust width as needed */
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
