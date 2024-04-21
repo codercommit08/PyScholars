@@ -94,19 +94,38 @@
 
 /* For mobile phones */
 @media only screen and (max-width: 768px) {
+
+    .mainBody{
+      overflow-x: hidden;
+      max-width: 100%;
+    }
     .navbar {
         font-size: 18px; /* Smaller font size for navbar links */
+        width: 93%;
+
+    }
+    .navtext{
+      text-align: center;
     }
 
     .navbar button {
-        padding: 5px 15px; /* Adjust button padding */
+        padding: 6px 16px; /* Adjust button padding */
         font-size: 14px; /* Smaller font size for buttons */
     }
 
     .homes {
-        height: auto; /* Make height automatic to fit content */
+        height: 80vh; /* Make height automatic to fit content */
         padding: 70px 25px; /* Adjust padding for smaller screens */
+        width: 87.5%;
         
+    }
+
+    .center{
+      width: 105%;
+      padding-top: 100px;
+      align-items: center;
+      margin: 0;
+      
     }
     
     .aboutUs{
@@ -150,7 +169,7 @@
 
     .cards-container{
       display: flex;
-      width:60%;
+      width:65%;
       flex-direction: column;
       align-items: center;
       /* padding-right: 30%; */
@@ -177,7 +196,7 @@
     .footer {
         padding: 20px 15px; /* Adjust padding for footer */
         height: auto;
-        width: 93%;
+        width: 92.5%;
     }
     .footer p{
       font-size: 10%;

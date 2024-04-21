@@ -15,22 +15,25 @@
         <div class="navbar">
            
             <a href="#home" class="navtext"><button>Home</button></a>
-            <a href="#about" class="navtext"><button>About Us</button></a>
+            <a href="#about reveal" class="navtext"><button>About Us</button></a>
             <a href="#join" class="navtext"><button>Join Us</button></a>
+            <a href="#team-flex" class="navtext"><button>Team</button></a>
         </div>
 
-        <section id="about" class="aboutUs">
+        <section id="about reveal" class="aboutUs">
             <h1 class="aboutTitle">About Us</h1>
-            <div class="about" id="flex">
-                <div class="card">
-                    <h2>Math Tutoring</h2>
-                    <p>At PyScholars we also provide one on one math tutoring where our tutors are knowledgable in a variety of subjects from Elementary to High School courses. Our style of teaching not only prepares students well for tests, but also helps them remember important concepts and topics in the field of math. </p>
-                </div>
-                <div class="card">
+           
+            <div class="about" id="flex" >
+                <div class="card reveal">
                     <h2>Our Mission</h2>
                     <p>PyScholars is dedicated to making high-quality education accessible to all. Through our charity-driven classes and tutoring, we aim to support local communities and inspire a love for learning. <u> Every course you take helps someone in need. </u></p>
                 </div>
-                <div class="card">
+                <div class="card reveal">
+                    <h2>Math Tutoring</h2>
+                    <p>At PyScholars we also provide one on one math tutoring where our tutors are knowledgable in a variety of subjects from Elementary to High School courses. Our style of teaching not only prepares students well for tests, but also helps them remember important concepts and topics in the field of math. </p>
+                </div>
+               
+                <div class="card reveal" >
                     <h2>Python Classes</h2>
                     <p>Our Python classes are designed to introduce coding in an engaging and accessible manner.</p>
                 </div>
@@ -121,7 +124,7 @@
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a></li>
             </ul>
-            <p>Got any questions? Please contact us at <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqVNSnXkQCkDtmssbFCSqhHwzCbvSSLxSDbdBzDsqRWzbTHcghbpVpQBhHPzBgDWGMHlSB"><u>teachpyscholars@gmail.com</u></a></p>
+            <p>Got any questions? Please contact us at <a href="https://mail.google.com/mail/u/0/?fs=1&to=teachpyscholars@gmail.com&su=&body=&tf=cm"><u>teachpyscholars@gmail.com</u></a></p>
         
           </footer>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -134,6 +137,31 @@
                 }, 4000); // 3.9 seconds
             });
             </script>
+
+        <script>
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+                    var windowheight =window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150
+
+                    if (revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+
+
+                }
+            }
+        </script>
+
                 
             
     </body>
