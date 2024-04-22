@@ -147,6 +147,7 @@
       width: 100%;
       font-size: 20%;
       margin-left: 20px;
+      height: auto;
     }
 
     .joinUs{
@@ -209,4 +210,119 @@
 }
 
     
+@media only screen and (max-width: 431px) {
+
+  .mainBody{
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+  .navbar {
+      font-size: 18px; /* Smaller font size for navbar links */
+      width: 93%;
+
+  }
+  .navtext{
+    text-align: center;
+  }
+
+  .navbar button {
+      padding: 6px 16px; /* Adjust button padding */
+      font-size: 14px; /* Smaller font size for buttons */
+  }
+
+  .homes {
+      height: 80vh; /* Make height automatic to fit content */
+      padding: 70px 25px; /* Adjust padding for smaller screens */
+      width: 87.5%;
+      
+  }
+
+  .center{
+    width: 105%;
+    padding-top: 100px;
+    align-items: center;
+    margin: 0;
     
+  }
+  
+  .aboutUs{
+    height: auto;
+  }
+
+  .team{
+    text-align: center;
+  }
+
+  .team-container, .team-card{
+    width: 60%;
+    flex-direction: row;
+    margin: auto;
+    
+  }
+  
+
+  .join-card{
+    width: 100%;
+    font-size: 20%;
+    margin-left: 20px;
+    height: auto;
+  }
+
+  .joinUs{
+    height: 200vh;
+    padding-bottom: 0% ;
+  }
+
+  .joinTitle {
+    margin-right: 40px;
+  }
+
+  .aboutTitle, .joinTitle, .team {
+      font-size: 10vmin; /* Smaller font size for titles */
+  }
+
+  .team-card{
+    width: 100%;
+  }
+
+
+  .cards-container{
+    display: flex;
+    width:65%;
+    flex-direction: column;
+    align-items: center;
+    /* padding-right: 30%; */
+  }
+
+  .card-title {
+      font-size: 2rem; /* Smaller font size for card titles */
+  }
+
+  .weprovide{
+    font-size: 7em;
+  }
+
+  .card-list{
+    font-size: 1px;
+  }
+
+  .card-button {
+      padding: 15px 20px; /* Adjust padding for buttons */
+      font-size: 1.5rem; /* Smaller font size for buttons */
+      margin-top: 20px; /* Adjust margin top */
+  }
+
+  .footer {
+      padding: 20px 15px; /* Adjust padding for footer */
+      height: auto;
+      width: 92.5%;
+  }
+  .footer p{
+    font-size: 10%;
+  }
+
+  .social-icon__link {
+      font-size: 1.5rem; /* Adjust social icon size for mobile */
+      padding-right: 5%;
+  }
+}
