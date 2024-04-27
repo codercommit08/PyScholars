@@ -6,7 +6,6 @@
         <link rel="icon" type="image/x-icon" href="pylogo.png">
         <link href="style.css" type="text/css" rel="stylesheet">
         <link href="mobile.css" type="text/css" rel="stylesheet">
-        <link href="iphone12pro.css" type="text/css" rel="stylesheet">
     </head>
     <body class="mainBody">
         <div id="home" class="homes">
@@ -17,8 +16,9 @@
            
             <a href="#home" class="navtext"><button>Home</button></a>
             <a href="#about reveal" class="navtext"><button>About Us</button></a>
-            <a href="#join" class="navtext"><button>Join Us</button></a>
             <a href="#team-flex" class="navtext"><button>Team</button></a>
+            <a href="#join" class="navtext"><button>Join Us</button></a>
+           
         </div>
 
         <section id="about reveal" class="aboutUs">
@@ -42,22 +42,22 @@
             <div class="ourteam" id="team-flex">
                 <h2 class="team">Our Team</h2>
                 <div class="team-container">
-                    <div class="team-card">
+                    <div class="team-card reveal1">
                         <img src="IMG_1350.jpeg" alt="Team Member" class="team-image">
                         <h3>Aahil Taylor</h3>
                         <p>Co-founder</p>
                     </div>
-                    <div class="team-card">
+                    <div class="team-card reveal1">
                         <img src="IMG_1350.jpeg" alt="Team Member" class="team-image">
                         <h3>Dhruva Kanna</h3>
                         <p>Co-founder</p>
                     </div>
-                    <div class="team-card">
+                    <div class="team-card reveal1">
                         <img src="IMG_1350.jpeg" alt="Team Member" class="team-image">
                         <h3>Nikhil Martha</h3>
                         <p>Secretary</p>
                     </div>
-                    <div class="team-card">
+                    <div class="team-card reveal1">
                         <img src="IMG_1350.jpeg" alt="Team Member" class="team-image">
                         <h3>Vishnu Sentha</h3>
                         <p>Treasurer</p>
@@ -88,7 +88,7 @@
                         <li>First Session <b>ON US</b></li>
                     </ul>
                     <p class="pricething"><b>$5</b>/class</p>
-                    <button class="card-button">Register Now!</button>
+                   <a href="register.html" target="_blank"><button class="card-button">Register Now!</button></a>
                 </div>
                 <div class="join-card">
                     <h2 class="card-title">Python Camps</h2>
@@ -125,7 +125,7 @@
                   <ion-icon name="logo-instagram"></ion-icon>
                 </a></li>
             </ul>
-            <p>Got any questions? Please contact us at <a href="https://mail.google.com/mail/u/0/?fs=1&to=teachpyscholars@gmail.com&su=&body=&tf=cm"><u>teachpyscholars@gmail.com</u></a></p>
+            <p>Got any questions? Please contact us at <a href="https://mail.google.com/mail/u/0/?fs=1&to=teachpyscholars@gmail.com&su=&body=&tf=cm" target="_blank"><u>teachpyscholars@gmail.com</u></a></p>
         
           </footer>
           <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -138,12 +138,38 @@
                 }, 4000); // 3.9 seconds
             });
             </script>
-
+<!-- About Us Reveal -->
         <script>
             window.addEventListener('scroll', reveal);
 
             function reveal(){
                 var reveals = document.querySelectorAll('.reveal');
+
+                for(var i = 0; i < reveals.length; i++){
+                    var windowheight =window.innerHeight;
+                    var revealtop = reveals[i].getBoundingClientRect().top;
+                    var revealpoint = 150
+
+                    if (revealtop < windowheight - revealpoint){
+                        reveals[i].classList.add('active');
+                    }
+                    
+                    else{
+                        reveals[i].classList.remove('active');
+                    }
+
+
+                }
+            }
+        </script>
+       
+       
+       <!-- Team card reveal -->
+         <script>
+            window.addEventListener('scroll', reveal);
+
+            function reveal(){
+                var reveals = document.querySelectorAll('.reveal1');
 
                 for(var i = 0; i < reveals.length; i++){
                     var windowheight =window.innerHeight;

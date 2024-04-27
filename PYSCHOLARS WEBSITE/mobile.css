@@ -1,34 +1,4 @@
-/* @media only screen and (max-width: 480px) and (max-width: 760px){
-  .mainBody{
-    margin: auto;
-    width: 150%;
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-  .homes{
-    flex-direction: column;
-    height: 150vh;
 
-  }
-
-
-  .about, .card{
-    flex-direction: column;
-    flex-basis: auto;
-    width: 70%;
-    margin: auto;
-
-  }
-
-  .center{
-    width: 95%;
-    margin: auto;
-  }
-
-
-
-}
-/* For tablets */
 @media (max-width: 1000px) {
     .about, .cards-container {
         flex-direction: column;
@@ -269,7 +239,7 @@
   }
 
   .joinUs{
-    height: 200vh;
+    height: 150vh;
     padding-bottom: 0% ;
   }
 

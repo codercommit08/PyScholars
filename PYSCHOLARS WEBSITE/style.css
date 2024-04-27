@@ -4,7 +4,9 @@
   justify-content: center;
   flex-wrap: nowrap;
 }
-
+a {
+  text-decoration: none;
+}
 .card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.242);
@@ -74,6 +76,7 @@
 }
 
 .card-button {
+  
   background-color: #f5da0c;
   color: white;
   border: none;
@@ -88,6 +91,7 @@
   line-height: 1.5px; /* Adjust this value to center the text vertically */
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px; /* Optional: adds space between the list and the button */
+  text-decoration: none;
 
 }
 
@@ -214,6 +218,7 @@ button{
 }
 .team{
     width: 100%;
+    padding-top: 5%;
     padding-bottom: 0px;
     font-family: "Lexend", sans-serif;
     font-optical-sizing: auto;
@@ -248,15 +253,6 @@ button{
 
 }
 
-/* }
-.teams{
-    height: 70vh;
-    padding-top: 10px;
-    padding-left:250px;
-    padding-right: 250px;
-    padding-bottom: 20px;
-
-} */
 
 .joinUs {
   height: 70vh;
@@ -269,8 +265,9 @@ button{
 
  
  .footer {
+  height: auto;
   position: relative;
-  width: 93%;
+  width: 94.8%;
   background: #3586ff;
   min-height: 105px;
   padding: 20px 50px;
@@ -453,6 +450,18 @@ button{
   transform:translate(0px);
   opacity: 1;
 }
+
+.reveal1{
+  position: relative;
+  transform: translateX(150px);
+  transform:translateY(100px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+  .reveal1.active{
+    transform:translate(0px);
+    opacity: 1;
+  }
 
 @keyframes desaturate {
     0% {
