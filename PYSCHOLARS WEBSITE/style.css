@@ -453,14 +453,41 @@ button{
 
 .reveal1{
   position: relative;
-  transform: translateX(150px);
-  transform:translateY(100px);
+  transform: translateX(15px);
   opacity: 0;
   transition: all 1s ease;
 }
   .reveal1.active{
     transform:translate(0px);
     opacity: 1;
+  }
+
+  .registerbody{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .registertitle{
+  width: 100%;
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6vmin;
+  /* color:rgb(27, 81, 163); */
+  color: rgb(55, 127, 241);
+  text-shadow: rgb(0 0 0 / 25%) 4px 3px 3px;
+  }
+  .register1{
+    background: linear-gradient(rgb(55, 127, 241), whitesmoke);
+  }
+  .form{
+    padding-bottom: 5%;
+  
+  }
+  .payment{
+    padding-bottom: 10%;
   }
 
 @keyframes desaturate {
@@ -493,6 +520,7 @@ button{
   100% {
     background-positon-x: 0px;
   }
+
 }  
 
 
