@@ -175,10 +175,27 @@ button{
 
 .center {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    justify-content: right;
+    margin:auto;
+    /* margin-right: auto; */
+    width: 90%;
+    justify-content: left;
+    
+  }
+
+  .typed-out{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 2.5s steps(20, end) forwards;
+    font-size: 1.6rem;
+    width: 0;
+  }
+
+  .center1 {
+    margin:auto;
+
+
+
     
   }
 
@@ -186,6 +203,10 @@ button{
     background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255));
     height: 72vh;
     padding: 85px;
+    position:relative;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 .aboutUs{
@@ -549,5 +570,8 @@ button{
 
 }  
 
-
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40% }
+}
 
