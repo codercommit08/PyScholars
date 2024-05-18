@@ -177,7 +177,7 @@ button{
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
     justify-content: right;
     
   }
@@ -189,7 +189,7 @@ button{
 }
 
 .aboutUs{
-    height: 200vh;
+    height: 125vh;
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
@@ -489,6 +489,32 @@ button{
   .payment{
     padding-bottom: 10%;
   }
+
+  .registertitle{
+    padding-top: 5vh;
+    width: 100%;
+    text-align: center;
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 6vmin;
+    /* color:rgb(27, 81, 163); */
+    color: rgb(55, 127, 241);
+    text-shadow: rgb(0 0 0 / 25%) 4px 3px 3px;
+    }
+    .register1{
+      background: linear-gradient(rgb(228, 228, 228), whitesmoke);
+      height: 110vh;
+    }
+    .form{
+      padding-left: 10%;
+      padding-right: 10%;
+    
+    }
+    .payment{
+      padding-left: 8%;
+    }
 
 @keyframes desaturate {
     0% {
