@@ -145,9 +145,6 @@ html {
     
 }
 
-
-
-
 button{
     display: inline-block;
     outline: 0;
@@ -172,24 +169,27 @@ button{
     transition: all 0.4s ease 0s;
     transform: translateY(-5px);
 }
+.home{
+
+}
 
 .center {
-    display: flex;
     margin:auto;
-    /* margin-right: auto; */
+    margin-right: auto;
     width: 90%;
-    justify-content: left;
-    
+    display:block;
+    text-align: center;
+    padding-left: 54%;
   }
 
-  .typed-out{
+  /* .typed-out{
     overflow: hidden;
-    border-right: .15em solid orange;
+    border-right: .15em solid rgb(237, 215, 53);
     white-space: nowrap;
-    animation: typing 2.5s steps(20, end) forwards;
-    font-size: 1.6rem;
+    animation: typing 2.5s steps(25, end) forwards;
+    font-size: 2.6rem;
     width: 0;
-  }
+  } */
 
   .center1 {
     margin:auto;
@@ -572,6 +572,6 @@ button{
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 40% }
+  to { width: 65% }
 }
 

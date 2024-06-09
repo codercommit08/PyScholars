@@ -90,7 +90,7 @@
     }
 
     .center{
-      width: 105%;
+      width: 150%;
       padding-top: 100px;
       align-items: center;
       margin: 0;
@@ -207,10 +207,10 @@
   }
 
   .center{
-    width: 105%;
-    padding-top: 100px;
+    width: 200%;
+    padding:0%;
     align-items: center;
-    margin: 0;
+    margin: auto;
     
   }
   
