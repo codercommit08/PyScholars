@@ -414,7 +414,7 @@ button{
 }
 
 .team-card {
-  width: 35%; /* Adjust width as needed */
+  width: 35%; 
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -527,8 +527,9 @@ button{
       height: 110vh;
     }
     .form{
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin: auto;
     
     }
     .payment{
