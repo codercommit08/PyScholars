@@ -423,7 +423,7 @@ button{
 
 .team-image {
   width: 100%;
-  height: auto;
+  height: 85%;
   object-fit: cover;
 }
 
