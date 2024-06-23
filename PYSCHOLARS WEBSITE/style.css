@@ -128,7 +128,9 @@ html {
     width: 100%;
     font-family: "Lexend", sans-serif;
    
+   
 }
+/*
 .navbar{
     font-size: 22px;
     text-align: center;
@@ -139,9 +141,7 @@ html {
     width: 99.5%;
     padding: 12px;
     z-index: 1000000;
-    /* color: black;
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2);
-    box-shadow: 0 4px 4px 0 rgba(0,0,0,.2); */
+   
     
 }
 
@@ -156,7 +156,6 @@ button{
     font-size: 15px;
     height: 30px;
     padding: 5px 25px;
-    /* text-shadow: rgb(0 0 0 / 25%) 0px 3px 8px; */
     background-color:rgb(55, 127, 241);
     transition: all 0.7s ease 0s;
     font-family: "Lexend", sans-serif;
@@ -169,6 +168,74 @@ button{
     transition: all 0.4s ease 0s;
     transform: translateY(-5px);
 }
+*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color:rgb(55, 127, 241);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 55px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.navtext {
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.7s ease 0s;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  font-size: 15px;
+  height: 20px;
+  padding: 5px 25px;
+  background-color:rgb(55, 127, 241);
+
+}
+
+.navtext:hover {
+  box-shadow: rgb(216, 233, 65) 0px 1px 40px;
+  transition: all 0.4s ease 0s;
+  transform: translateY(-5px);
+}
+
+.donate-btn {
+  background-color: #f5da0c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position:relative;
+  right: 35px;
+}
+
+.donate-btn:hover {
+  background-color: #bda623;
+  transform: translateY(-3px);
+}
+
 
 
 .center {
@@ -198,17 +265,18 @@ button{
   }
 
 .homes{
-    background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255));
+    /* background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255)); */
     height: 72vh;
     padding: 85px;
     position:relative;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
 
 }
 
 .aboutUs{
-    height: 125vh;
+    height: 60vh;
     padding-top: 35px;
     padding-left:200px;
     padding-right: 200px;
@@ -286,7 +354,7 @@ button{
  .footer {
   height: auto;
   position: relative;
-  width: 94.8%;
+  width: 94.7%;
   background: #3586ff;
   min-height: 105px;
   padding: 20px 50px;
@@ -535,6 +603,33 @@ button{
     .payment{
       padding-left: 8%;
     }
+  
+@media ONLY screen and (max-width: 580px) {
+  .hamburger{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    left: 130px;
+  }
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+
+  }
+  .navtext{
+    display: none;
+    
+
+
+  }
+  .donate-btn{
+    display:none;
+  }
+
+}
+
 
 @keyframes desaturate {
     0% {
