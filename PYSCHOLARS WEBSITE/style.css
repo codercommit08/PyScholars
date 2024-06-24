@@ -265,7 +265,7 @@ button{
   }
 
 .homes{
-    /* background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255)); */
+    background: linear-gradient(rgb(55, 127, 241), rgb(255, 255, 255));
     height: 72vh;
     padding: 85px;
     position:relative;
@@ -303,7 +303,7 @@ button{
     color: rgb(55, 127, 241);
     text-shadow: rgb(0 0 0 / 25%) 3px 3px 3px;
 }
-.team{
+/* .team{
     width: 100%;
     padding-top: 5%;
     padding-bottom: 0px;
@@ -314,7 +314,7 @@ button{
     font-size: 4vmin;
     color: rgb(55, 127, 241);
     text-shadow: rgb(0 0 0 / 25%) 3px 3px 3px
-}
+} */
 
 .joinTitle {
   width: 100%;
@@ -603,6 +603,9 @@ button{
     .payment{
       padding-left: 8%;
     }
+  .nav-menu{
+    text-decoration: none;
+  }
   
 @media ONLY screen and (max-width: 580px) {
   .hamburger{
@@ -618,15 +621,13 @@ button{
     margin: 6px 0;
 
   }
-  .navtext{
-    display: none;
-    
-
-
-  }
-  .donate-btn{
-    display:none;
-  }
+.navtext{
+  display:none;
+}
+ 
+ .donate-btn{
+  display:none;
+ }
 
 }
 

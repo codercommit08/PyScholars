@@ -16,26 +16,27 @@
         <div class="navbar">
             <img src="pylogo.png" alt="PyLogo" class="logo">
             <div class="nav-links">
-                <div class="hamburger">
+                <div class="hamburger" onclick="toggleMenu()">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class ="line"></div>
 
                 </div>
-                
-                <a href="#home" class="navtext">Home</a>
-                <a href="#about" class="navtext">About Us</a>
-                <a href="#join" class="navtext">Join Us</a>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="#home" class="navtext">Home</a>
+                    <a href="#about reveal" class="navtext">About Us</a>
+                    <a href="#join" class="navtext">Join Us</a>
+                </div>
             </div>
-           <a href="https://hcb.hackclub.com/donations/start/pyscholars" target="_blank"> <button  class="donate-btn" >Donate</button></a>
-
-        
-        </div>
-
+          <a href="https://hcb.hackclub.com/donations/start/pyscholars" target="_blank"> <button  class="donate-btn" >Donate</button></a></div>
 
         
 
-        <section id="about reveal" class="aboutUs">
+
+
+        
+
+        <section id="about reveal" class="aboutUs" id="aboutUS">
             <h1 class="aboutTitle reveal1">About Us</h1>
            
             <div class="about" id="flex" >
@@ -193,6 +194,13 @@
                 }
             }
         </script>
+        <script>
+            function toggleMenu() {
+                var navMenu = document.getElementById('nav-menu');
+                navMenu.classList.toggle('active');
+            }
+        </script>
+        
        
                 
             
